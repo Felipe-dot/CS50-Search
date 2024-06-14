@@ -3,19 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Search</title>
+    <title>Google Images</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="images.css" />
   </head>
   <body>
     <header>
       <nav>
-        <div class="nav-left">
-          <span><a href="#">About</a></span>
-          <span><a href="#">Store</a></span>
-        </div>
         <div class="nav-right">
-          <span><a href="#">Gmail</a></span>
-          <span><a href="/images.html">Images</a></span>
+          <span><a href="/index.html">Search</a></span>
           <span><a href="/advancedSearchPage.html">Advanced search</a></span>
           <svg class="app_options" focusable="false" viewBox="0 0 24 24">
             <path
@@ -34,7 +30,10 @@
       </nav>
     </header>
     <main>
-      <img src="public/google_logo.png" alt="Google Logo" class="logo" />
+      <div class="image_logo">
+        <img src="public/google_logo.png" alt="Google Logo" class="logo" />
+        <span>images</span>
+      </div>
       <form action="https://google.com/search" method="get" autocomplete="off">
         <div class="search-bar">
           <span class="search-icon">
@@ -98,27 +97,27 @@
                 </g>
               </svg>
             </span>
+            <span class="search_blue_icon">
+              <svg
+                focusable="false"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                data-iml="1718387586719"
+              >
+                <path
+                  d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+                ></path>
+              </svg>
+            </span>
           </div>
-        </div>
-        <div class="google_input">
-          <input type="submit" value="Google Search" />
-          <input type="submit" value="I'm Feeling Lucky" name="btnI" />
         </div>
       </form>
     </main>
-    <footer>
+    <footer class="footer">
       <div class="footer-left">
         <span><a href="#">Advertising</a></span>
         <span><a href="#">Business</a></span>
         <span><a href="#">How Search works</a></span>
-      </div>
-      <div class="footer-center">
-        <span
-          ><a href="#"
-            >🍃 Our third decade of climate action: join us Privacy Terms
-            Settings</a
-          ></span
-        >
       </div>
       <div class="footer-right">
         <span><a href="#">Privacy</a></span>

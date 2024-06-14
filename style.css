@@ -22,11 +22,11 @@ header {
 header nav button {
   color: white;
   height: 35px;
-  padding: 6px 16px;
+  padding: 6px 26px;
 
   border: none;
   cursor: pointer;
-  border-radius: 15px;
+  border-radius: 5px;
   background-color: #0b57d0;
 }
 
@@ -51,12 +51,33 @@ a {
   font-size: 14px;
 }
 
-nav a:hover {
+a:hover {
   border-bottom: 1px solid #5f6368;
 }
 
 nav button:hover {
+  background-color: #0b57d0;
+  opacity: 0.9;
   box-shadow: 3px 3px #dadce0;
+}
+
+.app_options {
+  padding: 8px;
+  opacity: 1;
+  white-space: nowrap;
+  line-height: normal;
+  display: inline-block;
+  outline: none;
+  vertical-align: middle;
+  box-sizing: border-box;
+  height: 40px;
+  width: 40px;
+  padding: 8px;
+  color: inherit;
+  background-position: -64px -29px;
+  opacity: 1;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 main {
@@ -113,7 +134,8 @@ form {
 }
 
 .mic-icon,
-.camera-icon {
+.camera-icon,
+.search_blue_icon {
   width: 20px;
   height: 20px;
   cursor: pointer;
