@@ -96,3 +96,64 @@ footer {
   display: flex;
   gap: 40px;
 }
+
+.mobile {
+  display: none;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  .mobile {
+    display: block;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .nav-mobile-left {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  footer {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .footer-left,
+  .footer-right {
+    gap: 20px;
+  }
+}
+
+/* For mobile (landscape) */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+}
+
+/* For tablet */
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+}
+
+/* For small desktop */
+
+@media only screen and (min-width: 980px) and (max-width: 1023px) {
+}
+
+/* For typical desktop */
+
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+}
+
+/* For large desktop */
+
+@media only screen and (min-width: 1200px) {
+}
