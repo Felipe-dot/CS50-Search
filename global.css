@@ -106,8 +106,13 @@ footer {
     display: block;
   }
 
-  .hidden {
+  .hidden,
+  .app_options {
     display: none;
+  }
+
+  header {
+    padding: 10px 10px;
   }
 
   nav {
@@ -134,26 +139,35 @@ footer {
   }
 }
 
-/* For mobile (landscape) */
-
 @media only screen and (min-width: 480px) and (max-width: 767px) {
+  .mobile {
+    display: block;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .nav-mobile-left {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  footer {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .footer-left,
+  .footer-right {
+    gap: 30px;
+  }
 }
 
-/* For tablet */
 @media only screen and (min-width: 768px) and (max-width: 979px) {
-}
-
-/* For small desktop */
-
-@media only screen and (min-width: 980px) and (max-width: 1023px) {
-}
-
-/* For typical desktop */
-
-@media only screen and (min-width: 1024px) and (max-width: 1199px) {
-}
-
-/* For large desktop */
-
-@media only screen and (min-width: 1200px) {
+  .footer-center {
+    display: none;
+  }
 }

@@ -109,10 +109,20 @@ footer {
   header {
     padding: 8px 8px;
   }
+
   header nav button {
     padding: 6px 10px;
     text-align: center;
     text-wrap: nowrap;
+  }
+
+  form span {
+    align-items: start;
+    flex-direction: column;
+  }
+
+  form span input {
+    margin-top: 5px;
   }
 
   main {
@@ -120,30 +130,38 @@ footer {
   }
 
   .form-options {
-    width: 350px;
+    width: 260px;
   }
 }
 
-/* For mobile (landscape) */
-
 @media only screen and (min-width: 480px) and (max-width: 767px) {
+  header {
+    padding: 8px 8px;
+  }
+
+  main {
+    overflow: hidden;
+  }
+
+  .form-options {
+    width: 460px;
+  }
 }
 
-/* For tablet */
 @media only screen and (min-width: 768px) and (max-width: 979px) {
-}
+  .hidden {
+    display: none;
+  }
 
-/* For small desktop */
+  header {
+    padding: 8px 8px;
+  }
 
-@media only screen and (min-width: 980px) and (max-width: 1023px) {
-}
+  main {
+    overflow: hidden;
+  }
 
-/* For typical desktop */
-
-@media only screen and (min-width: 1024px) and (max-width: 1199px) {
-}
-
-/* For large desktop */
-
-@media only screen and (min-width: 1200px) {
+  .form-options {
+    width: 660px;
+  }
 }

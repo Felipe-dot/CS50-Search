@@ -6,7 +6,7 @@ main {
   justify-content: center;
   gap: 20px;
   padding: 20px;
-  margin-bottom: 180px;
+  margin-bottom: 120px;
 }
 
 .logo {
@@ -103,30 +103,24 @@ input[type="submit"]:hover {
     margin-bottom: 100px;
   }
   .search-bar {
-    width: 384px;
+    width: 330px;
   }
 }
 
-/* For mobile (landscape) */
-
 @media only screen and (min-width: 480px) and (max-width: 767px) {
+  main {
+    margin-bottom: 80px;
+  }
+  .search-bar {
+    width: 435px;
+  }
 }
 
-/* For tablet */
 @media only screen and (min-width: 768px) and (max-width: 979px) {
-}
-
-/* For small desktop */
-
-@media only screen and (min-width: 980px) and (max-width: 1023px) {
-}
-
-/* For typical desktop */
-
-@media only screen and (min-width: 1024px) and (max-width: 1199px) {
-}
-
-/* For large desktop */
-
-@media only screen and (min-width: 1200px) {
+  main {
+    margin-bottom: 60px;
+  }
+  .search-bar {
+    width: 630px;
+  }
 }
