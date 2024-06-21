@@ -50,7 +50,12 @@
         <img src="public/google_logo.png" alt="Google Logo" class="logo" />
         <span>images</span>
       </div>
-      <form action="https://google.com/search" method="get" autocomplete="off">
+      <form
+        action="https://google.com/search"
+        method="get"
+        autocomplete="off"
+        id="imageForm"
+      >
         <div class="search-bar">
           <span class="search-icon">
             <svg
@@ -114,7 +119,7 @@
                 </g>
               </svg>
             </span>
-            <span class="search_blue_icon">
+            <span class="search_blue_icon" onclick="submitForm()">
               <svg
                 focusable="false"
                 xmlns="http://www.w3.org/2000/svg"
@@ -142,5 +147,10 @@
         <span><a href="#">Settings</a></span>
       </div>
     </footer>
+    <script>
+      function submitForm() {
+        document.getElementById("imageForm").submit();
+      }
+    </script>
   </body>
 </html>
